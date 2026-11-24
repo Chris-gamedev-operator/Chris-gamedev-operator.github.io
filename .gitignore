@@ -1,0 +1,10 @@
+# Local contribution template & WIP folders
+data/contribution_template.md
+*/wip/
+*/drafts/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
