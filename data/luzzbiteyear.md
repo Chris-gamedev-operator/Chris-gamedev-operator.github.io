@@ -12,8 +12,9 @@
 Built the decoupled communication backbone, runtime pooling infrastructure, audio/VFX playback systems, and third-party package/model integration supporting the team's feature development. Built component classes and Enemy AI (classes, StateMachineBehaviours, animations integration). Prepared levellayout with prefabs we integrated from our 3D- and UI- Artists.
 
 ## Key Systems Built
-* **ScriptableObject Event & Data Architecture:** Implemented asset-based `ScriptableObject` event channels and shared configuration assets so gameplay systems, UI, and audio could react to events without hard scene references or tight coupling.
-* **Object Pooling Infrastructure:** Created centralized pooling for recurring gameplay objects and effects to keep frame times stable.
+* **ScriptableObject Event & Data Architecture:** Implemented asset-based `ScriptableObject` [event channels](https://github.com/PenguPixel/LuzzBiteyear_Game/tree/main/Assets/Scripts/Architecture/Events) and shared configuration assets so gameplay systems, UI, and audio could react to events without hard scene references or tight coupling.
+* **Object Pooling Infrastructure:** Created [centralized pooling](https://github.com/PenguPixel/LuzzBiteyear_Game/blob/main/Assets/Scripts/Architecture/Managers/PoolManager.cs) for recurring gameplay objects and effects to keep frame times stable.
+* **Modular Entity Architecture:** Built small scale [components](https://github.com/PenguPixel/LuzzBiteyear_Game/tree/main/Assets/Scripts/Gameplay/Components) to handle entity needs under separation of concerns.
 * **Audio & VFX Integration:** Built modular triggers connecting gameplay events to sound effects and visual particle feedback.
 * **Package & Asset Integration:** Managed Unity package setup and 3D model integration across the project, keeping scenes and prefabs consistent for teammates.
 

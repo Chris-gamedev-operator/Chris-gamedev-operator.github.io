@@ -13,9 +13,9 @@
 Owned the enemy gameplay architecture, runtime performance pooling, audio trigger integration, and technical coordination for character/model integration under tight game-jam constraints.
 
 ## Key Systems Built
-* **Enemy State Machine & Behavior Loop:** Designed and implemented enemy AI states (detection, pursuit, attack, and state transitions) to drive responsive combat encounters.
-* **Object Pooling System:** Built reusable object pooling for frequently spawned runtime entities/projectiles to avoid instantiation spikes and garbage collection stutter during active combat.
-* **SFX Integration & Event Hooks:** Wired sound-effect triggers cleanly into enemy actions, state changes, and gameplay feedback events.
+* **Enemy State Machine & Behavior Loop:** Designed and implemented [enemy](https://github.com/Keradean/Destroy-the-System/blob/main/Assets/Project/Scripts/Chris/EnemyControllerBase.cs) AI states (detection, pursuit, attack, and state transitions) to drive responsive combat encounters.
+* **Object Pooling System:** Built reusable [object pooling](https://github.com/Keradean/Destroy-the-System/blob/main/Assets/Project/Scripts/Chris/PoolManager.cs) for frequently spawned runtime entities/projectiles to avoid instantiation spikes and garbage collection stutter during active combat.
+* **SFX Integration & Event Hooks:** Wired sound-effect triggers cleanly into enemy actions, state changes, and gameplay [feedback events](https://github.com/Keradean/Destroy-the-System/blob/main/Assets/Project/Scripts/Chris/FXBridge.cs).
 * **Model & Animator Integration Pipeline:** Provided technical direction for rigging/importing character models and configuring Unity Animator controllers/transitions so art assets integrated smoothly with enemy state logic.
 
 ## Technical Takeaways

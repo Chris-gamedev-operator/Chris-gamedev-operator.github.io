@@ -12,8 +12,8 @@
 Designed and built the complete first-person traversal prototype solo—covering player movement physics, custom state-machine architecture, interaction mechanics, custom 3D assets, and Unity Editor tooling.
 
 ## Key Systems Built
-* **Custom State Machine (`StateController` & Abstract `State` Classes):** Implemented a modular state machine that evaluates player inputs and spatial context each frame to dispatch transitions across movement and traversal states cleanly.
-* **Physics-Based First-Person Traversal & Stamina:** Built force-driven `Rigidbody` movement wired to the Unity 6 Input System, supporting angle-dependent **wallrunning** and **wallclimbing** paired with a stamina system that drains during active wall traversal and regenerates in grounded/standard states.
+* **Custom State Machine ([`StateController`](https://github.com/Chris-gamedev-operator/TowerUp/blob/main/Assets/Scripts/Managers/StateController.cs) & Abstract [`State`](https://github.com/Chris-gamedev-operator/TowerUp/blob/main/Assets/Scripts/State.cs) [Classes](https://github.com/Chris-gamedev-operator/TowerUp/tree/main/Assets/Scripts/StateMachineArchive)):** Implemented a modular state machine that evaluates player inputs and spatial context each frame to dispatch transitions across movement and traversal states cleanly.
+* **Physics-Based First-Person Traversal & Stamina:** Built force-driven `Rigidbody` movement wired to the Unity 6 Input System, supporting angle-dependent **wallrunning**(https://github.com/Chris-gamedev-operator/TowerUp/blob/main/Assets/Scripts/StateMachineArchive/WallRunning.cs) and **wallclimbing** paired with a stamina system that drains during active wall traversal and regenerates in grounded/standard states.
 * **Blender-Style `ArrayModifier` Editor Tool:** Created a Unity Editor script to duplicate and arrange modular level prefabs along configurable offsets from a floor origin point, accelerating scene assembly.
 * **Interactables & Custom Asset Pipeline:** Built credit-chip collection, switch-to-door unlock logic, and custom 3D models/textures in Blender and Adobe Substance Painter.
 

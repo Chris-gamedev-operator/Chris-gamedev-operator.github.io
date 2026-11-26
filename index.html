@@ -1,48 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width;" />
-    <title>Chris Gamedev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris // Gamedev</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
-    // Banner that i could ask an actual artist to help me out with. Or go with barebones editor fonts for a clear visual design. 
-      <nav>
-        // Probably want to make it outright sticky or hide it on scroll
+    <header class="header-bar">
+      <div class="branding">
+      <!--Banner that i could ask an actual artist to help me out with. Or go with barebones editor fonts for a clear visual design.-->
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>CHRIS // GAME_DEV</span>
+      </div>
+
+      <!-- Nav indicator -->
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        <span id="currentChapter">[01]ABOUT</span>
+        <span aria-hidden="true">▼</span>  
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Section-navigation">
+        <a href="#about" class="local-link is-active" data-label="[01] ABOUT">[01] ABOUT</a>
+        <a href="#projects" class="local-link" data-label="[02] PROJECTS">[02] PROJECTS</a>
+        <a href="#skills" class="local-link" data-label="[03] SKILLS">[03] SKILLS</a>
       </nav>
     </header>
 
-    <main>
-    // Sections either as containers similar to a cyberpunk style interface, seems futuristic but may be detriment in UX.
-      <section>
-        <h2>About</h2>
-        <p>How to represent oneself is a very difficult question. I like understatement and clear focus on ones' capabilities.</p>
-        <p></p>
+    <main class="container">
+      <!-- [01] ABOUT -->
+      <!--Sections similar to a cyberpunk style interface, seems futuristic but may be detriment in UX depending on viewport.-->
+      <section id="about" class="panel">
+        <div class="panel-header">// 01_ABOUT</div>
+        <h1>Christof Kloninger</h1>
+        <p class="subtitle">C# Systems &amp; Gameplay Programmer</p>
+        <!--IDEA: what about a few paragraphs that contain generic beginnings e.g. "I am ", followed by a revolving set of completions, e.g. "GameDev", "Son", something to show humanity and relatability--> 
+        <!-- I am is already very strong and i don't need to overdo it now-->
+        <div class="identity-rotator" aria-label="Interactive role selector">
+          <span class="rotator-prefix">I am</span>
+          <button type="button" class="rotator-slot" id="roleWheel" title="Hover to pause, scroll to cycle, click to inspect">
+            <span id="roleText"> a Game Developer</span>
+            <span class="rotator-hint" aria-hidden="true">&#8644;</span>
+          </button>
+        </div>
+        <p class="about-summary">
+          Focused on decoupled runtime architecture, predictable state machines, and custom Unity editor tooling. Hover or scroll the selector above—or click any role to inspect the
+          corresponding systems and collaboration notes below.
+        </p>
       </section>
-      <section>
-        <h2>Projects</h2>
-        <p>How to represent oneself is a very difficult question. I like understatement and clear focus on ones' capabilities.</p>
-        // Galleries are an option, combination of curated screenshot fodlers to projects in conjencture with notes found in data to the project and let script build it dynamically.
-        // OR something else entirely. 
-        <p></p>
+
+      <!-- [02] PROJECTS -->
+      <section id="projects" class="panel">
+        <div class="panel-header">
+          <span>// 02_PROJECTS // ARCHIVE TERMINAL</span>
+        </div>
+        <p class="section-intro">
+          Select a project tab to inspect media captures, architectural contributions, and direct C# script links. 
+        </p>
+        <!-- Tab Strip with Title, Thumbnail, Hook-->
+        <div id="projectTabs" class="project-tabs" role="tablist" aria-label="Projects"></div>
+        <!-- Expanded Active Terminal View with gallery of screenshots and contribution data -->
+        <article id="projectViewer" class="project-viewer" role="tabpanel" aria-live="polite"></article>
       </section>
-      <section>
-        <h2>Skills</h2>
-        <p>How to represent oneself is a very difficult question. I like understatement and clear focus on ones' capabilities.</p>
-        // Stat bars are meaningless, think of a better way to present it.
-        <p></p>
+
+      <!-- [03] SKILLS -->
+      <section id="skills" class="panel">
+        <div class="panel-header">// 03_SKILLS</div>
+        <p class="section-intro">
+          Select a capability to highlight the projects where it was implemented.
+        </p>
+        <div id="skillsContainer" class="skills-groups"></div>
+        <div id="skillDetailBox" class="skill-detail-box"></div>
       </section>
     </main>
 
-    <footer>
-    // Links to Contacts and social media, or none at all because its all in the head already and htis is for presentation only.
-    // mail
-    // github
-    // itch.io need to curate the presentation on that too and build a few smaller projects with tight development cycles.
-    // linkedin 
+    <footer class="footer-bar">
+      <!-- Footer Links were a courtesy of Gemini. I will have to keep inline svg in mind. -->
+      <div class="footer-links">
+        <a href="mailto:kloningerchristof@gmail.com" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M2 4h20v16H2V4zm2 3.2V18h16V7.2l-8 5.3-8-5.3zm14.2-.2H5.8L12 11.1 18.2 7z"/>
+          </svg>
+          <span>E-Mail</span>
+        </a>
+
+        <a href="https://github.com/Chris-gamedev-operator" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.03 11.03 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://chris-gamedev-operator.itch.io" target="_blank" rel="noopener" aria-label="itch.io">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.13 2 1 4.6v1.8c0 1.4 1.1 2.5 2.4 2.5 1.3 0 2.4-1.1 2.4-2.5 0 1.4 1.1 2.5 2.4 2.5 1.3 0 2.4-1.1 2.4-2.5 0 1.4 1.1 2.5 2.4 2.5 1.3 0 2.4-1.1 2.4-2.5 0 1.4 1.1 2.5 2.4 2.5 1.3 0 2.4-1.1 2.4-2.5 0 1.4 1.1 2.5 2.4 2.5 1.3 0 2.4-1.1 2.4-2.5V4.6L20.87 2H3.13zM3 10.2V20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9.8c-.7.5-1.5.8-2.4.8-.9 0-1.8-.4-2.4-1-.6.6-1.5 1-2.4 1-.9 0-1.8-.4-2.4-1-.6.6-1.5 1-2.4 1-.9 0-1.8-.4-2.4-1-.6.6-1.5 1-2.4 1-.9 0-1.7-.3-2.2-.8zm5.5 2.8h7l1.5 2.5v3h-2.5v-2h-5v2H7v-3l1.5-2.5z"/>
+          </svg>
+          <span>itch.io</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/christof-kloninger-7a053b389/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96V21h-4V9z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>      <p class="footer-note">
+        Commit attribution note: Earlier repository commits appear under my previous GitHub handle
+        (<code>Chris-gme-DM</code>).
+      </p>
     </footer>
 
+    <!-- JS scripts -->
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
