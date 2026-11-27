@@ -56,8 +56,8 @@ PORTFOLIO_DATA.projects = [
         title: "Destroy the System (Canary Grave)",
         role: "Systems & AI Programmer (Game Jam)",
         hook: "Enemy state machine, object pooling, SFX integration, and character/animator pipeline coordination.",
-        repoUrl: "https://github.com/Chris-gamedev-operator/Destroy-the-System",
-        itchUrl: "https://chris-gamedev-operator.itch.io",
+        repoUrl: "https://github.com/Keradean/Destroy-the-System",
+        itchUrl: "https://panpoleon.itch.io/canarygrave",
         notesFile: "./data/canary-grave.md",
         thumb: "./media/img/canary-grave/Thumb.png",
         screenshots: [
