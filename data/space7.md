@@ -1,4 +1,4 @@
-# SpaceY7 — Contribution & Architecture Notes
+# Space7 — Contribution & Architecture Notes
 
 **Role:** Project Lead & Programming Lead  
 **Tech Stack:** Unity, C#  
