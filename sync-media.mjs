@@ -7,7 +7,7 @@ const IMAGE_EXTS = new Set([".png", ".jpg", ".jpeg", ".webp", ".gif"]);
 
 // Maps project id in scripts/data-projects.js -> folder name under media/img/
 const FOLDER_MAP = {
-  spacey7: "spaceY7",
+  space7: "space7",
   towerup: "towerup",
   "canary-grave": "canary-grave",
   luzzbiteyear: "luzzbiteyear",

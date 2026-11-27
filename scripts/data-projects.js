@@ -7,26 +7,26 @@
  */
 PORTFOLIO_DATA.projects = [
     {
-        id: "spacey7",
-        title: "SpaceY7",
+        id: "space7",
+        title: "Space7",
         role: "Project & Programming Lead",
         hook: "Exploration-to-building mode switching and real-time spatial placement validation in Unity.",
         repoUrl: "https://github.com/Chris-gamedev-operator/SpaceY7",
-        notesFile: "./data/spaceY7.md",
-        thumb: "./media/img/spaceY7/Thumb.png",
+        notesFile: "./data/space7.md",
+        thumb: "./media/img/space7/Thumb.png",
         screenshots: [
-            "./media/img/spaceY7/screenshots/S7_InEditor_01.png",
-            "./media/img/spaceY7/screenshots/S7_screenshot_01.png",
-            "./media/img/spaceY7/screenshots/S7_screenshot_02.png",
-            "./media/img/spaceY7/screenshots/S7_screenshot_03.png",
-            "./media/img/spaceY7/screenshots/S7_screenshot_04.png",
-            "./media/img/spaceY7/screenshots/S7_screenshot_inventory.png"
+            "./media/img/space7/screenshots/S7_InEditor_01.png",
+            "./media/img/space7/screenshots/S7_screenshot_01.png",
+            "./media/img/space7/screenshots/S7_screenshot_02.png",
+            "./media/img/space7/screenshots/S7_screenshot_03.png",
+            "./media/img/space7/screenshots/S7_screenshot_04.png",
+            "./media/img/space7/screenshots/S7_screenshot_inventory.png"
         ],
         techshots: [
-            "./media/img/spaceY7/techshots/S7_Code_BuildingActions.png",
-            "./media/img/spaceY7/techshots/S7_Code_BuildingManager_PlacemenetValidation.png",
-            "./media/img/spaceY7/techshots/S7_Code_PlayerControllerMonolith.png",
-            "./media/img/spaceY7/techshots/S7_GravityManipulation.png"
+            "./media/img/space7/techshots/S7_Code_BuildingActions.png",
+            "./media/img/space7/techshots/S7_Code_BuildingManager_PlacemenetValidation.png",
+            "./media/img/space7/techshots/S7_Code_PlayerControllerMonolith.png",
+            "./media/img/space7/techshots/S7_GravityManipulation.png"
         ]
     },
 
