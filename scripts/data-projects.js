@@ -85,7 +85,7 @@ PORTFOLIO_DATA.projects = [
         title: "LuzzBiteyear",
         role: "Systems & Infrastructure Programmer",
         hook: "ScriptableObject event architecture, object pooling, audio/VFX hooks, and team package/model integration.",
-        repoUrl: "https://github.com/Chris-gamedev-operator/LuzzBiteyear_Game",
+        repoUrl: "https://github.com/PenguPixel/LuzzBiteyear_Game",
         notesFile: "./data/luzzbiteyear.md",
         thumb: "./media/img/luzzbiteyear/Thumb.png",
         screenshots: [
