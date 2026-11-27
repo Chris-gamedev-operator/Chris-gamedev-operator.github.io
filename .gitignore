@@ -8,3 +8,4 @@ data/contribution_template.md
 Thumbs.db
 .vscode/
 .idea/
+.sync-media.mjs

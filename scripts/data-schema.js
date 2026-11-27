@@ -1,7 +1,7 @@
 /**
-Portfolio Data Schema + Blank Templates
+ * Portfolio Data Schema + Blank Templates
  */
- 
+
 window.PORTFOLIO_DATA = window.PORTFOLIO_DATA || {
     identityRoles: [],
     skillGroups: [],

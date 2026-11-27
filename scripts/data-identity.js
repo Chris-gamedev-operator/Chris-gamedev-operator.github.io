@@ -1,6 +1,6 @@
 /**
-Identity Rotator Suffixes ("I am [text]")
-Hover pauses auto-cycle; wheel steps manually; click jumps to target.
+ * Identity Rotator Suffixes ("I am [text]")
+ * Hover pauses auto-cycle; wheel steps manually; click jumps to target.
  */
 
 PORTFOLIO_DATA.identityRoles = [
